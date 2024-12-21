@@ -12,7 +12,7 @@ class SpecialHeader extends HTMLElement {
                         <li><a href="index.html" class="nav-link">Home</a></li>
                         <li><a href="about.html" class="nav-link">About</a></li>
                         <li><a href="resume.html" class="nav-link">Resume</a></li>
-                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <!-- <li><a href="services.html" class="nav-link">Services</a></li>
                         <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
                         <li class="dropdown">
                             <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -32,7 +32,7 @@ class SpecialHeader extends HTMLElement {
                                 <li><a href="#">Dropdown 4</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li> -->
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
@@ -106,7 +106,7 @@ class SpecialFooter extends HTMLElement {
 
                 <div class="container">
                 <div class="copyright text-center ">
-                    <p>© <span>Copyright</span> <strong class="px-1 sitename">Shihab</strong> <span>All Rights Reserved<br></span>
+                    <p> &copy; <span>Copyright</span> <strong class="px-1 sitename">Shihab</strong> <span>All Rights Reserved<br></span>
                     </p>
                 </div>
                 <div class="social-links d-flex justify-content-center">

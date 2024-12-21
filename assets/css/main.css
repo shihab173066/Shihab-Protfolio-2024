@@ -1418,3 +1418,40 @@ section,
   font-weight: bold;
   text-align: center;
 }
+
+bodyS {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.rowS {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.columnS {
+  text-align: center;
+  width: 24%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+iframeS {
+  width: 100%;
+  height: 200px;
+  border: none;
+  margin-top: 10px;
+}
+aS {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+imgS {
+  width: 32px;
+  height: 32px;
+}
