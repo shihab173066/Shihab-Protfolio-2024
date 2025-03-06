@@ -12,8 +12,8 @@ class SpecialHeader extends HTMLElement {
                         <li><a href="index.html" class="nav-link">Home</a></li>
                         <li><a href="about.html" class="nav-link">About</a></li>
                         <li><a href="resume.html" class="nav-link">Resume</a></li>
-                        <!-- <li><a href="services.html" class="nav-link">Services</a></li>
-                        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li><a href="services.html" class="nav-link">Projects</a></li>
+                        <!-- <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
                         <li class="dropdown">
                             <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
@@ -31,8 +31,8 @@ class SpecialHeader extends HTMLElement {
                                 <li><a href="#">Dropdown 3</a></li>
                                 <li><a href="#">Dropdown 4</a></li>
                             </ul>
-                        </li>
-                        <li><a href="contact.html" class="nav-link">Contact</a></li> -->
+                        </li> -->
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
@@ -183,6 +183,7 @@ class SpecialHead extends HTMLElement {
                     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
                     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+                    
                 
                     <!-- Fonts -->
                     <link href="https://fonts.googleapis.com" rel="preconnect">
