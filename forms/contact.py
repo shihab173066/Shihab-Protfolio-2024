@@ -2,25 +2,20 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-# Replace with your real receiving email address
-receiving_email_address = "mdshihabhedu@gmail.com"
-
-# Replace with your SMTP server details
-smtp_host = "smtp.gmail.com"  # For Gmail
-smtp_port = 587  # 587 for TLS, 465 for SSL
-smtp_username = "your_email@gmail.com"  # Replace with your SMTP email
-smtp_password = "your_app_password"  # Replace with your app-specific password
-
-# Function to send the email
+# Function to send an email
 def send_email(name, email, subject, message):
+    receiving_email_address = "shihabhossainauni01@gmail.com"  # Your email
+    smtp_host = "smtp.gmail.com"
+    smtp_port = 587  # TLS
+    smtp_username = "your_email@gmail.com"  # Your email
+    smtp_password = "your_app_password"  # Your app-specific password
+
     try:
         # Create the email content
         msg = MIMEMultipart()
-        msg['From'] = smtp_username  # Use your SMTP email as the sender
+        msg['From'] = smtp_username
         msg['To'] = receiving_email_address
         msg['Subject'] = subject
-
-        # Add the message body
         body = f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}"
         msg.attach(MIMEText(body, 'plain'))
 
@@ -31,20 +26,17 @@ def send_email(name, email, subject, message):
         server.sendmail(smtp_username, receiving_email_address, msg.as_string())
         server.quit()
 
-        return "Email sent successfully!"
-    except smtplib.SMTPAuthenticationError:
-        return "Failed to authenticate. Check your SMTP username and password."
-    except smtplib.SMTPConnectError:
-        return "Failed to connect to the SMTP server. Check your host and port."
+        print("Email sent successfully!")
     except Exception as e:
-        return f"Failed to send email: {str(e)}"
+        print(f"Failed to send email: {str(e)}")
 
-# Example usage (Replace these with real input values in production)
-name = "John Doe"
-email = "john.doe@example.com"
-subject = "Hello from Python"
-message = "This is a test email sent from Python."
+# Taking user input
+print("Please fill out the form below:")
 
-# Call the function
-response = send_email(name, email, subject, message)
-print(response)
+name = input("Your Name: ")
+email = input("Your Email: ")
+subject = input("Subject: ")
+message = input("Message: ")
+
+# Send the email
+send_email(name, email, subject, message)
